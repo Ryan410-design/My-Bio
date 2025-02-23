@@ -6,23 +6,35 @@
     <link rel="stylesheet" href="style.css">
     <title>Portofolio website</title>
     <style>
-        *{
-            margin: 1;
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
             padding: 0;
 
+        }
+        header{
+            background: #0073e6;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        section{
+            padding: 20px;
 
         }
-        body{
-            
-            height: 100vh;
-            background-color: azure;
-            color:blue;
-
+        .contact, .services, .skills, .project{
+            background: #f4f4f4;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
         }
+    
     </style>
 </head>
-<body>
+<body style="background-color: yellowgreen;"></body>
     <header>
+        <img src="309.jpg" width="150" height="100">
+<h1>Welcome to our website</h1>
         <h1>VINCENT KORIR</h1>
         <p class ="sub-title">web developer</p>
         <p class ="Bio">A passionate developer focused on creating website</p>
@@ -36,18 +48,45 @@
         <li>Web Design</li>
     </ul>
     </section>
-    <section class ="project">
-        <h2>my project</h2>
-        <div class ="project-grid">
+    <section class="services">
+<h2>our services</h2>
+<ul>
+    <li>Web Development</li>
+    <li>SEO Optimization</li>
+    <li>Graphic Design</li>
+    <li>IT Consulting</li>
+</ul>
+    </section>
+    <section id ="project">
+        <h2>Welcome to My project</h2>
+        <button onclick="showproject">click here</button>
+        <h2>my web development project</h2>
+        <div id="project-grid">
             <article class="project">
-                <h3>project</h3>
-                <p>Describe your project</p>
+        <ul>
+            <li>Portofoliowebsite</li>
+            <li>Blog platform</li>
+            <li>Chart Application</li>
+            <li>student Management system</li>
+            <li>Online Exams system</li>
+
+        </ul>
+        <script>
+            Function showproject(){
+                document.getElementsByid("projects").style.display="block";
+            }
+        </script>
+                
+                
             </article>
         </div>
     </section>
 <footer>
+    <section class="contact">
     <h2>contact</h2>
+    <p>phone number:0723003419</p>
     <p>Email:vincentkorir1822@gmail.com</p>
+    </section>
 </footer>
 </body>
 </html>
